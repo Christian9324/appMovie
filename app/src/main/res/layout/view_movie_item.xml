@@ -6,15 +6,16 @@
     android:layout_height="wrap_content"
     android:padding="2dp">
 
-    <ImageView
+    <com.example.appmovies.ui.common.AspectRatioImageView
         android:id="@+id/IVCover"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@mipmap/ic_launcher_round" />
+        app:ratio="1.5"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
         android:id="@+id/title_movie"
